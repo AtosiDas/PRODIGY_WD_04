@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa7f7797db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/background.jpg" alt="logo" class="logo">
+                
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-regular fa-circle-xmark" onClick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="row">
+                <!-- <div class="col-1"> -->
+                    <div class="header-text">
+                        <P>Full Stack Blockchain Developer</P>
+                        <h1>Hii, I am <span>Atosi Das</span><br/> from India.</h1>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="col-2"> -->
+                    <img src="images/profile2.jpg">
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/edit_2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Atosi Das, a 2nd-year M.Tech student specializing in Cryptology
+                         and Security at the Indian Statistical Institute, Kolkata. Proficient 
+                         in Blockchain Technology, I'm a quick learner and organized individual
+                          eager to contribute to innovative projects. Let's connect!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onClick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Blockchain Development</span><br>Building DApp using Solidity</li>
+                            <li><span>Web Development</span><br>Building websites using HTML, CSS, JavaScript</li>
+                            <li><span>Cryptology</span><br>Implimenting Cryptographic algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Intern in SAG labs, DRDO</span><br>January 2024 - June 2024<br>Security analysis of Cryptographic premitives</li>
+                            <li><span>Intern in IIT Patna</span><br>March 2023 - May 2023<br>Worked on Hyperledger fabric</li>
+                            <li><span>Subject Matter Expert(Advanced Mathematics)</span><br>February 2022 - August 2022<br>Solved Questions of advanced Mathematics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>M.Tech in Cryptology and Security, 72%</span><br>Indian Statistical Institute, Kolkata</li>
+                            <li><span>MSc in Mathematics, CGPA - 8.93/10</span><br>Visva-Bharati University, Santiniketan</li>
+                            <li><span>BSc in Mathematics, 66.7%</span><br>Bijay Krishna Girls' College, Howrah</li>
+                            <li><span>Higher Secondary Examination(12th), 87.8%</span><br>Jhapordah Duke Institution, Domjur</li>
+                            <li><span>Madhyamik Examination(10th), 76.8%</span><br>Begri Girls' High School, Begri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Decentralized Application(DApp)</h2>
+                    <p>Make DApp using Solidity and React.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>DeFi</h2>
+                    <p>Make DeFi using Solidity and React.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Make interactive website using HTML, CSS, JavaScript, and React.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Blockchain On Emergencies</h3>
+                        <p>In most critical time, we can use Blockchain to track ambulance. We also share patient's data securely using this app.</p>
+                        <a href="https://github.com/AtosiDas/HackwithML"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Ethereum Dapp</h3>
+                        <p>This DApp can show our balances. Also we can transact ethereum from one acount to another.</p>
+                        <a href="https://github.com/AtosiDas/Ethereum_DAPP"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.jpg">
+                    <div class="layer">
+                        <h3>Solidity problems</h3>
+                        <p>Solve a lot of problems using Solidity.</p>
+                        <a href="https://github.com/AtosiDas/ProblemsOfSolidity"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/AtosiDas?tab=repositories" class="btn">See more...</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>atosidas44@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/AtosiDas"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/atosi-das-5737511b6/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Atosi350828"><i class="fa-brands fa-x-twitter"></i></a>
+                        
+                    </div>
+                    <a href="images/AtosiResume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your mail id" required>
+                        <textarea name="Message" rows="5" placeholder="Type your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2024. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+        <div class="top"><a href="#header"><i class="fa-regular fa-hand-point-up"></i></a></div>
+    </div>     
+    <script type="text/JavaScript" src="index.js"></script>
+</body>
+</html>

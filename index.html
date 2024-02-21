@@ -9,20 +9,34 @@
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav>
+        <nav>
+            <img src="images/background.jpg" alt="logo" class="logo">
+            
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class=" fas fa-regular fa-circle-xmark" onClick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+    </div>
+    <div class="container">
+            <!-- <nav>
                 <img src="images/background.jpg" alt="logo" class="logo">
                 
                 <ul id="sideMenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class=" fas fa-regular fa-circle-xmark" onClick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
+            </nav> -->
             <div class="row">
                 <!-- <div class="col-1"> -->
                     <div class="header-text">
@@ -34,7 +48,6 @@
                     <img src="images/profile2.jpg">
                 <!-- </div> -->
             </div>
-        </div>
     </div>
 
     <div id="about">
@@ -64,14 +77,14 @@
                     </div>
                     <div class="tab-contents" id="experiences">
                         <ul>
-                            <li><span>Intern in SAG labs, DRDO</span><br>January 2024 - June 2024<br>Security analysis of Cryptographic premitives</li>
+                            <li><span>Intern in SAG labs, DRDO</span><br>January 2024 - June 2024<br>Security analysis of Cryptographic premitives used in Blockchain</li>
                             <li><span>Intern in IIT Patna</span><br>March 2023 - May 2023<br>Worked on Hyperledger fabric</li>
                             <li><span>Subject Matter Expert(Advanced Mathematics)</span><br>February 2022 - August 2022<br>Solved Questions of advanced Mathematics</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>M.Tech in Cryptology and Security, 72%</span><br>Indian Statistical Institute, Kolkata</li>
+                            <li><span>M.Tech in Cryptology and Security, 70%</span><br>Indian Statistical Institute, Kolkata</li>
                             <li><span>MSc in Mathematics, CGPA - 8.93/10</span><br>Visva-Bharati University, Santiniketan</li>
                             <li><span>BSc in Mathematics, 66.7%</span><br>Bijay Krishna Girls' College, Howrah</li>
                             <li><span>Higher Secondary Examination(12th), 87.8%</span><br>Jhapordah Duke Institution, Domjur</li>
@@ -113,7 +126,7 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">My projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/work1.png">

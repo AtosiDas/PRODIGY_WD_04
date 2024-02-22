@@ -114,9 +114,8 @@ nav ul li a:hover::after{
     margin-top: 150px;
     border-radius: 15px;
     float: right;
-    transition: transfrom 0.5s;
+    /* transition: transfrom 0.5s; */
 }
-
 .about-col-2{
     flex-basis: 60%;
 }
